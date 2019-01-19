@@ -1,0 +1,427 @@
+/*
+  Theme Name: Edubin - LMS Education HTML Template
+  Author: Humayun Ahmed
+  Author URL: https://themeforest.net/user/pixelcurve
+  Support: humayunahmed82@gmail.com
+  Description: Creative  HTML5 template.
+  Version: 1.0
+*/
+
+/* CSS Index 
+----------------------------------- */
+@import url('https://fonts.googleapis.com/css?family=Lato:300,300i,400,700,900');
+
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+.header {
+  border-bottom: 1px dotted #ddd;
+  transition: .35s;
+}
+.scroll-menu {
+  background: #343A40;
+  border-bottom: 1px solid #ddd;
+  padding: 8px 0;
+}
+.logo {
+  padding: 0;
+  margin: 0;
+  color: #fff;
+}
+.header .navbar-nav .nav-link {
+  padding: 15px 20px;
+  color: #b8b8b8;
+  transition: .5s;
+}
+.header .navbar-nav .nav-link:hover {
+  color: #ffffff;
+}
+
+
+
+.slider-single {
+	position: relative;
+	overflow: hidden;
+}
+.slider-img {
+	width: 100%;
+}
+.slider-img img {
+	width: 100%;
+	height: 100vh;
+  animation: slider-anim 10s linear infinite;
+}
+@keyframes slider-anim {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.3);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.slider-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #333;
+    opacity: .8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+.slider-content {
+  overflow: hidden;
+}
+.slider-content h2 {
+	font-size: 40px;
+	font-weight: 400;
+  letter-spacing: 2px;
+}
+.slider-content h1 {
+  font-size: 60px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+.slide-active i.slick-arrow {
+	position: absolute;
+	top: 50%;
+	left: 30px;
+	transform: translateY(-50%);
+	font-size: 27px;
+	z-index: 9;
+	color: #fff;
+	cursor: pointer;
+	padding: 10px;
+}
+.slide-active i.fa-angle-right.slick-arrow{
+	left: auto;
+	right:30px;
+}
+.section-title h2 {
+  overflow: hidden;
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 40px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #343A40;
+}
+
+.about-content {
+    overflow: hidden;
+    padding: 0 25px;
+    text-align: center;
+}
+.about-content p {
+    font-size: 18px;
+    letter-spacing: 1.5px;
+    color: #343A40;
+}
+.about-video {
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+.play-icon {
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+  height: 100%;
+  background: rgba(0,0,0,.5);
+}
+.play-icon a {
+  color: #ddd;
+  font-size: 28px;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  border: 1px solid #eee;
+  border-radius: 50%;
+  text-align: center;
+  transition: .5s;
+}
+.play-icon a:hover {
+  transform: scale(1.2);
+}
+
+
+.skill-area {
+  overflow: hidden;
+}
+.skill-content p {
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 1.5px;
+}
+
+
+.counter-single {
+    overflow: hidden;
+    background: #343A40;
+    color: #ddd;
+    padding: 40px 0;
+    margin-bottom: 30px;
+}
+/* service area */
+.service-single {
+  overflow: hidden;
+  overflow: hidden;
+  margin-bottom: 30px;
+  padding: 0 20px;
+}
+.service-icon {
+    font-size: 40px;
+    float: left;
+    background: #343A40;
+    color: #fff;
+    border-radius: 50% 0 50% 50%;
+    width: 80px;
+    height: 84px;
+    line-height: 80px;
+    text-align: center;
+    margin: 0 20px 40px;
+}
+.testimonial-single {
+  text-align: center;
+  position: relative;
+  margin-bottom: 30px;
+  overflow: hidden;
+  cursor: grab;
+}
+.testimonial-content i {
+    position: absolute;
+    left: 0;
+    font-size: 45px;
+    opacity: .3;
+    top: -5px;
+}
+.testimonial-content p {
+    font-size: 18px;
+    letter-spacing: 1.5px;
+    font-style: italic;
+    padding: 0 30px;
+}
+.testimonial-img {
+  margin-bottom: 25px;
+  overflow: hidden;
+}
+.testimonial-img img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+.testimonial-img h5 {
+  margin-top: 10px;
+}
+
+.testimonial-active .slick-dots {
+  text-align: center;
+  bottom: 0;
+  z-index: 99;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+.testimonial-active .slick-dots li {
+  display: inline-block;
+  margin: 0 4px
+}
+.testimonial-active .slick-dots li button {
+  background: no-repeat;
+  border: 0;
+  height: 5px;
+  width: 7px;
+  text-indent: -9999px;
+  background: #666;
+  transition: .3s;
+  padding: 0;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.testimonial-active .slick-dots li.slick-active button{
+  width: 15px;
+  background: #333;
+}
+
+.cta-area {
+  overflow: hidden;
+}
+.cta-area h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.cta-area a {
+    background: #ddd;
+    border-radius: 30px;
+    padding: 12px 20px;
+    font-weight: 700;
+    color: #343A40;
+}
+
+
+.portfolio-btn {
+  margin-bottom: 50px;
+  text-align: center;
+}
+.portfolio-btn button {
+    background: none;
+    border: 1px solid #ddd;
+    padding: 5px 13px;
+    border-radius: 20px;
+    margin: 10px 5px;
+    cursor: pointer;
+}
+.portfolio-btn button.active, .portfolio-btn button:hover {
+  background: #F0F0EE;
+}
+.portfolio-single {
+  overflow: hidden;
+  margin-bottom: 30px;
+  overflow: hidden;
+  position: relative;
+}
+.portfolio-overlay {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transform: scale(0);
+    transition: .5s;
+}
+.portfolio-single:hover .portfolio-overlay {
+  opacity: 1;
+  transform: scale(1);
+}
+.portfolio-overlay a {
+  font-size: 35px;
+  color: #ddd;
+  width: 50px;
+  height: 50px;
+  display: block;
+}
+.portfolio-single img {
+  width: 100%;
+}
+
+
+.blog-single {
+    overflow: hidden;
+    margin-bottom: 30px;
+    background: #fff;
+    transition: .5s;
+}
+
+.blog-img {
+    overflow: hidden;
+    height: 250px;
+}
+.blog-img img {
+    width: 100%;
+    transition: .5s;
+}
+.blog-single:hover {
+  margin-top: -10px;
+  box-shadow: 0px 0px 20px #888;
+}
+.blog-single:hover .blog-img img {
+  transform: scale(1.1);
+}
+.blog-content {
+    padding: 20px;
+    text-align: center;
+}
+.blog-content h4 {
+  margin-bottom: 20px;
+}
+.blog-content p {
+  font-size: 18px;
+  color: #343A40;
+}
+
+
+
+.contact-single {
+  overflow: hidden;
+  background: #F0F0EE;
+  padding: 40px 0;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #444;
+}
+.contact-single i {
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+
+.contact-form {
+  overflow: hidden;
+}
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 5px 15px;
+    margin: 8px 0;
+    border: 0;
+    border-bottom: 1px dotted #ddd;
+    color: #444;
+}
+.contact-form input:focus, .contact-form textarea:focus {
+  outline: 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.footer-area {
+  color: #fff;
+}
+.footer-area a {
+  color: #ccc;
+  padding: 5px;
+}
+.footer-area a:hover {
+  color: #fff;
+}
+.widgets {
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+
+.copy-right {
+  background: #333;
+  overflow: hidden;
+}
+.copy-right P {
+  margin-bottom: 0px;
+}
+
+
+.scroll-top a {
+  background: #343A40;
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  line-height: 50px;
+  text-align: center;
+  color: #fff;
+  border-radius: 50%;
+}

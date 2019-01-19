@@ -1,0 +1,49 @@
+@media (max-width: 767px) {
+	.slider-content h2 {
+		font-size: 30px;
+	}
+	.slider-content h1 {
+		font-size: 36px;
+	}
+	
+
+
+	.widgets {
+		text-align: center;
+	}
+
+
+
+}
+
+
+
+@media (max-width: 576px) {
+
+	.section-title h2, .cta-area h2 {
+		font-size: 30px;
+		letter-spacing: 1px;
+	}
+	.about-content p, .testimonial-content p, .skill-content p {
+		font-size: 16px;
+		letter-spacing: 0px;
+	}
+	.service-single {
+		text-align: center;
+	}
+	.service-icon {
+		float: none;
+		margin: 0 auto 40px;
+	}
+	
+	.slider-content h2 {
+		font-size: 20px;
+	}
+	.slider-content h1 {
+		font-size: 20px;
+	}
+	.scroll-top a {
+		right: 5px;
+	}
+}
+
